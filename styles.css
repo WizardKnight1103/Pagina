@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #eaf4e1;
+    color: #2f4f2f;
+}
+
+nav {
+    background-color: #2f4f2f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.text-mask {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-mask h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+footer {
+    background-color: #2f4f2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f8e0;
+    color: #2f4f2f;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.content img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.destinos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eaf4e1;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.card {
+    background-color: var(--clr);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .circle {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.card .content {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .content {
+    opacity: 1;
+}
+
+.card a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.contacto {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #2f4f2f;
+}
+
+.contacto form {
+    max-width: 500px;
+    margin: auto;
+    background: #eaf4e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contacto label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #2f4f2f;
+    border-radius: 5px;
+}
+
+.contacto textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contacto input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contacto input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 10% auto;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.card-img, .modal-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+ 

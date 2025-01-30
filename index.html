@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="inicio" class="parallax">
+        <div class="text-mask">
+            <video autoplay muted loop>
+                <source src="video/nature.mp4" type="video/mp4">
+            </video>
+            <h2>Bienvenido a Eco-Travel</h2>
+        </div>
+    </section>
+    <br>
+    <section class="content">
+        <p>Explora y aprecia la naturaleza en sus rincones más bellos</p>
+        <video autoplay loop width="640" height="360">
+            <source src="video/ecoturismo.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
+          
+        <p>Conoce destinos turísticos sostenibles y contribuye al medio ambiente</p>
+        <p>Descubre nuevos lugares y culturas mientras te conectas con la naturaleza</p>
+        <p>Reserva tus viajes y contribuye a la conservación del medio ambiente</p>
+    </section>
+    <br>
+    <section id="destinos" class="content">
+        <h2 style="align-items: center;">Destinos Populares</h2>
+        <div class="card-container">
+            <div class="card" style="--clr:#4CAF50;">
+                <img src="images/Calakmul2.png" alt="Calakmul" class="card-img">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>Calakmul</h3>
+                    <p>Un sitio arqueológico maya rodeado de selva.</p>
+                    <a href="#modal-calakmul">Explorar</a>
+                </div>
+            </div>
+            <div class="card" style="--clr:#2196F3;">
+                <img src="images/Akumal2.png" alt="Akumal" class="card-img">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>Akumal</h3>
+                    <p>Hermosas playas y nado con tortugas.</p>
+                    <a href="#modal-akumal">Explorar</a>
+                </div>
+            </div>
+            <div class="card" style="--clr:#FF9800;">
+                <img src="images/xilitla-portada.png" alt="Xilitla" class="card-img">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>Xilitla</h3>
+                    <p>Jardines surrealistas en la Huasteca Potosina.</p>
+                    <a href="#modal-xilitla">Explorar</a>
+                </div>
+            </div>
+            <div class="card" style="--clr:#673AB7;">
+                <img src="images/bacalar1.png" alt="Bacalar" class="card-img">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>Bacalar</h3>
+                    <p>La Laguna de los Siete Colores.</p>
+                    <a href="#modal-bacalar">Explorar</a>
+                </div>
+            </div>
+            <div class="card" style="--clr:#E91E63;">
+                <img src="images/laguna.png"Lagunas Montebello" class="card-img">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>Lagunas Montebello</h3>
+                    <p>Conjunto de lagunas de distintos colores.</p>
+                    <a href="#modal-montebello">Explorar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modal-calakmul" class="modal">
+        <div class="modal-content">
+            <a href="#destinos" class="close">&times;</a>
+            <h3>Calakmul</h3>
+            <img src="images/Calakmul1.png" alt="Calakmul" class="modal-img">
+            <p>Un sitio arqueológico maya rodeado de selva, ideal para exploradores.</p>
+            <p><strong>Precio:</strong> $1,200 MXN por persona</p>
+            <p><strong>Incluye:</strong> Transporte, guía, entrada al sitio y lunch.</p>
+        </div>
+    </div>
+    
+    <div id="modal-akumal" class="modal">
+        <div class="modal-content">
+            <a href="#destinos" class="close">&times;</a>
+            <h3>Akumal</h3>
+            <img src="images/akumal3.png" alt="Akumal" class="modal-img">
+            <p>Hermosas playas y la experiencia única de nadar con tortugas.</p>
+            <p><strong>Precio:</strong> $850 MXN por persona</p>
+            <p><strong>Incluye:</strong> Equipo de snorkel, guía y acceso a la playa.</p>
+        </div>
+    </div>
+    
+    <div id="modal-xilitla" class="modal">
+        <div class="modal-content">
+            <a href="#destinos" class="close">&times;</a>
+            <h3>Xilitla</h3>
+            <img src="images/Xilitla.png" alt="Xilitla" class="modal-img">
+            <p>Jardines surrealistas en la Huasteca Potosina, un lugar mágico.</p>
+            <p><strong>Precio:</strong> $950 MXN por persona</p>
+            <p><strong>Incluye:</strong> Entrada a los jardines, transporte y guía.</p>
+        </div>
+    </div>
+    
+    <div id="modal-bacalar" class="modal">
+        <div class="modal-content">
+            <a href="#destinos" class="close">&times;</a>
+            <h3>Bacalar</h3>
+            <img src="images/bacalar2.png" alt="Bacalar" class="modal-img">
+            <p>La Laguna de los Siete Colores, un paraíso natural impresionante.</p>
+            <p><strong>Precio:</strong> $1,100 MXN por persona</p>
+            <p><strong>Incluye:</strong> Paseo en lancha, guía y snacks.</p>
+        </div>
+    </div>
+    
+    <div id="modal-montebello" class="modal">
+        <div class="modal-content">
+            <a href="#destinos" class="close">&times;</a>
+            <h3>Lagunas Montebello</h3>
+            <img src="images/lagunas-de-montebello.png" alt="Lagunas Montebello" class="modal-img">
+            <p>Un conjunto de lagunas con distintos colores en un entorno espectacular.</p>
+            <p><strong>Precio:</strong> $900 MXN por persona</p>
+            <p><strong>Incluye:</strong> Transporte, visita guiada y acceso a las lagunas.</p>
+        </div>
+    </div>
+        
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o sugerencias? ¡Contáctanos!</p>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Eco-Travel</p>
+    </footer>
+</body>
+</html>
+
